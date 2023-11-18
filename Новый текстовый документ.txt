@@ -1,0 +1,27 @@
+class Pet:
+
+  def __init__(self, name, species):
+
+      self.name = name
+
+      self.species = species
+
+      self.is_alive = True
+
+      self.age = 0
+
+  def grow(self):
+
+      self.age += 1
+
+cat = Pet("Пушок", "кошка")
+
+dog = Pet("Шарик", "собака")
+
+cat.grow()
+
+dog.grow()
+
+print(f"{cat.name} Растет, и ему уже {cat.age} года")
+
+print(f"{dog.name} Растет, и ему уже {dog.age} года")
